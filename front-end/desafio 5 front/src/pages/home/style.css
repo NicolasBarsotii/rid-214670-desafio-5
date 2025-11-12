@@ -1,0 +1,327 @@
+/* Reset e estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* HEADER - LINKS À ESQUERDA */
+header {
+  background-color: #303030;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* Espaço entre logo e links */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+nav img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* PÁGINA LISTAR LIVROS */
+.page-content {
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #333;
+}
+
+.nav-header h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.secondary-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.secondary-link:hover {
+  color: #007bff;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.books-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.book-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.book-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* PÁGINA CADASTRAR LIVROS */
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: normal;
+}
+
+.form-group label strong {
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mensagens de sucesso/erro */
+.message {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Loading state */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Estilo para ações do livro */
+.book-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.edit-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.edit-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Ajuste no botão ATUALIZAR para ficar em caixa alta */
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase; /* Para ficar em caixa alta */
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para ações do livro */
+.book-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.edit-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  background: white;
+}
+
+.edit-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-btn {
+  color: #dc3545;
+  background: white;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Ajuste no card do livro para acomodar os botões */
+.book-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.book-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.book-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Alternativa - botões em linha separada */
+.book-actions-separated {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* Ou se preferir os botões um abaixo do outro */
+.book-actions-stacked {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book-actions-stacked .edit-link,
+.book-actions-stacked .delete-btn {
+  text-align: center;
+  width: 100%;
+}
